@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper{
+    width: 100%;
+    display: flex;
+}
+
+.content{
+    background-image: url('./assets/sea.jpg');
+    background-size: 100%;
+    height: 45.75vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.h1{
+    color: white;
+}
+.piano{
+    display: flex;
+    align-items: flex-end;
+    height: 30vw;
+    width: 90vw;
+    background: black;
+    border-radius: 0.8vw;
+    box-shadow: 7px 10px 7px rgba(8, 8, 8, 0.5);
+}
+
+.keys{
+    user-select: none;
+    display: flex;
+    list-style-type: none;
+    width: 90vw;
+    height: 20vw;
+    cursor: pointer;
+}
+
+.black_keys{
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+}
+
+.key{
+    background-color: white;
+    flex-direction: column;
+    height: 20vw;
+    width: 2.5vw;
+    border: 0.5vw double black;
+    border-radius: 0.7vw;
+    box-shadow: inset 8px 5px 10px rgba(8, 8, 8, 0.5);
+    transition: .1s;
+}
+
+.bl-key{
+    background-color:black;
+    height: 15vw;
+    width: 2.5vw;
+    border-radius: 0.4vw;
+    margin-left: -1vw;
+    margin-right: -1vw;
+    z-index: 2;
+    box-shadow: 8px 7px 5px rgba(8, 8, 8, 0.5);
+}
+/* .bl-key-last{
+    background-color:black;
+    height: 15vw;
+    width: 1.5vw;
+    border-radius: 0.4vw;
+    margin-left: -1.3vw;
+    z-index: 2;
+    box-shadow: 8px 7px 5px rgba(8, 8, 8, 0.5);
+} */
+
+.key:active{
+    background: #ffa963;
+}
+
+.key.active{
+    background: rgb(226, 5, 5);
+}
+
+.bl-key:hover{
+    background: rgb(32, 32, 32);
+}
